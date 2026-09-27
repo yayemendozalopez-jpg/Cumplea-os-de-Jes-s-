@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#ff4f85" />
+  <title>Una sorpresa para Jesús 💗</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="sky" aria-hidden="true"></div>
+  <main class="app" id="app">
+    <section class="screen active cover" data-screen="cover">
+      <div class="hero-card glass">
+        <div class="car-scene" aria-hidden="true"><span class="star s1">✦</span><span class="star s2">✦</span><span class="moon">☾</span><div class="road"></div><div class="car"><span class="wheel w1"></span><span class="wheel w2"></span><span class="heart-light">♥</span></div></div>
+        <p class="eyebrow">Una sorpresa hecha por Yaretzi</p>
+        <h1>💗 Jesús, tengo una sorpresa para ti 💗</h1>
+        <p class="lead">Feliz cumpleaños, mi amor.</p>
+        <button class="primary pulse" id="startBtn">✨ Abrir mi sorpresa ✨</button>
+        <p class="tap-note">Toca para comenzar nuestro viaje</p>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="story">
+      <div class="page-head"><span class="badge">01</span><div><p class="eyebrow">Nuestro pequeño universo</p><h2>Nuestra historia 💌</h2></div></div>
+      <p class="intro">Toca cada estrella del camino para abrir un recuerdo.</p>
+      <div class="timeline">
+        <button class="memory-card reveal-card" data-title="11 de agosto de 2025 💌" data-text="El día en que todo comenzó. Ese día te mandé mi primer mensaje y sin saberlo estaba comenzando una historia muy especial."><span>💌</span><strong>11 de agosto de 2025</strong><small>Toca para descubrir</small></button>
+        <button class="memory-card reveal-card" data-title="Nuestro primer beso 💗" data-text="[Escribe aquí cómo fue nuestro primer beso: el lugar, lo que sentiste o tu detalle favorito.]"><span>💗</span><strong>Nuestro primer beso</strong><small>Toca para descubrir</small></button>
+        <button class="memory-card reveal-card" data-title="14 de noviembre ❤️" data-text="Nuestra fecha especial. Un día que siempre va a tener un rinconcito bonito en mi corazón."><span>❤️</span><strong>14 de noviembre</strong><small>Toca para descubrir</small></button>
+      </div>
+      <button class="primary next" data-next="letter">Seguir a mi carta →</button>
+    </section>
+
+    <section class="screen" data-screen="letter">
+      <div class="page-head"><span class="badge">02</span><div><p class="eyebrow">Para mi persona favorita</p><h2>Una carta para ti 💗</h2></div></div>
+      <article class="letter glass">
+        <p>Mi amor, <strong>Jesús</strong>:</p>
+        <p>Hoy quiero recordarte lo feliz que me hace compartir momentos contigo. A veces pienso en el <mark>11 de agosto de 2025</mark>, cuando te mandé mi primer mensaje, y me da mucha ternura saber que algo tan simple abrió una historia tan especial.</p>
+        <p>Guardo con mucho cariño nuestro <mark>primer beso</mark>, nuestros momentos y también el <mark>14 de noviembre</mark>, nuestra fecha especial. Todo contigo se siente más bonito, incluso cuando solo decimos <mark>“eh eh eh eh eh”</mark> y terminamos riéndonos.</p>
+        <p>Deseo que tengas un cumpleaños muy bonito, lleno de cosas que te hagan sonreír. Quiero seguir creando muchísimos recuerdos juntos, vivir más aventuras y guardar más pedacitos de nosotros.</p>
+        <p class="editable">[Aquí puedes agregar una anécdota, una promesa o algo que solo Jesús y tú entiendan.]</p>
+        <p>Con mucho amor,<br><strong>Yaretzi 💗</strong></p>
+      </article>
+      <button class="primary next" data-next="quiz">¿Jugamos? →</button>
+    </section>
+
+    <section class="screen" data-screen="quiz">
+      <div class="page-head"><span class="badge">03</span><div><p class="eyebrow">Nivel: novio experto</p><h2>¿Cuánto me conoces? 💞</h2></div></div>
+      <div id="quizBox" class="quiz-box glass"></div>
+      <button class="primary next hidden" id="quizNext">Siguiente pregunta →</button>
+    </section>
+
+    <section class="screen" data-screen="memories">
+      <div class="page-head"><span class="badge">04</span><div><p class="eyebrow">Secretos que se abren con amor</p><h2>Nuestros recuerdos</h2></div></div>
+      <p class="intro">Voltea las tarjetas y descubre lo que guardan.</p>
+      <div class="flip-grid">
+        <button class="flip-card"><span class="flip-inner"><span class="flip-front">💌<small>Un inicio</small></span><span class="flip-back"><strong>11/08/2025</strong><small>Tu primer mensaje fue el comienzo de todo.</small></span></span></button>
+        <button class="flip-card"><span class="flip-inner"><span class="flip-front">💗<small>Un momento</small></span><span class="flip-back"><strong>Primer beso</strong><small>[Escribe aquí su recuerdo favorito.]</small></span></span></button>
+        <button class="flip-card"><span class="flip-inner"><span class="flip-front">❤️<small>Una fecha</small></span><span class="flip-back"><strong>14 de noviembre</strong><small>Nuestra fecha especial.</small></span></span></button>
+        <button class="flip-card"><span class="flip-inner"><span class="flip-front">✨<small>Una frase</small></span><span class="flip-back"><strong>eh eh eh eh eh</strong><small>La frase más nuestra.</small></span></span></button>
+        <button class="flip-card"><span class="flip-inner"><span class="flip-front">🌸<small>Próximo recuerdo</small></span><span class="flip-back"><strong>Espacio editable</strong><small>[Agrega un recuerdo aquí.]</small></span></span></button>
+        <button class="flip-card"><span class="flip-inner"><span class="flip-front">🚗<small>Próxima aventura</small></span><span class="flip-back"><strong>Espacio editable</strong><small>[Agrega otra aventura aquí.]</small></span></span></button>
+      </div>
+      <button class="primary next" data-next="surprise">Abrir sorpresas →</button>
+    </section>
+
+    <section class="screen" data-screen="surprise">
+      <div class="page-head"><span class="badge">05</span><div><p class="eyebrow">No sabes cuál te tocará primero</p><h2>Elige una sorpresa 🎁</h2></div></div>
+      <div class="surprise-grid">
+        <button class="surprise-choice" data-surprise="Un deseo pequeñito: que hoy sonrías tanto como tú me haces sonreír. 💗"><span>🎁</span><strong>Sorpresa 1</strong><small>Tócame</small></button>
+        <button class="surprise-choice" data-surprise="Cinco amigas anime originales te mandan energía de cumpleaños: ¡que tu día sea brillante, Jesús! 🌸"><span class="anime-five">🌸🌼🌷🌺💮</span><strong>Sorpresa 2</strong><small>Tócame</small></button>
+        <button class="surprise-choice" data-surprise="Para nuestra próxima aventura: tú pones la música, yo llevo los snacks y nos vamos a pasear en carro. 🚗💨"><span>🚗</span><strong>Sorpresa 3</strong><small>Tócame</small></button>
+      </div>
+      <button class="primary next" id="finishBtn">Ver mi mensaje final ❤️</button>
+    </section>
+
+    <section class="screen final" data-screen="final">
+      <div class="final-card glass">
+        <div class="five-girls" aria-label="Ilustración decorativa original de cinco chicas anime"><span>👧🏻</span><span>👧🏼</span><span>👧🏽</span><span>👧🏾</span><span>👧🏿</span></div>
+        <h2>Feliz cumpleaños, Jesús ❤️</h2>
+        <p>Gracias por formar parte de mi historia, desde aquel primer mensaje del 11 de agosto de 2025 hasta todos los momentos que hemos vivido juntos.</p>
+        <p>Espero que podamos seguir creando muchísimos recuerdos juntos. 💗</p>
+        <p class="quote">“eh eh eh eh eh ❤️”</p>
+        <p>Con amor,<br><strong>Yaretzi</strong></p>
+        <button class="secondary" id="replayBtn">↻ Ver otra vez</button>
+      </div>
+    </section>
+  </main>
+  <div class="modal hidden" id="modal" role="dialog" aria-modal="true" aria-live="polite"><div class="modal-card"><button class="close" id="closeModal" aria-label="Cerrar">×</button><div id="modalIcon">💗</div><h3 id="modalTitle"></h3><p id="modalText"></p></div></div>
+  <div id="confetti" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
